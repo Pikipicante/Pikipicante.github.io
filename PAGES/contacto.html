@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Escuela Leo Paparella</title>
+    <link rel="stylesheet" href="../CSS/contacto.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="/index.html" class="logo nav-link"><img src="../IMG/leo paparella.png" alt="Logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-menu-items"><a href="/PAGES/historia.html" class="nav-menu-link nav-link">Quienes somos</a></li>
+                <li class="nav-menu-items"><a href="/PAGES/productos.html" class="nav-menu-link nav-link">Productos</a></li>
+                <li class="nav-menu-items"><a href="/PAGES/carreras.html" class="nav-menu-link nav-link">Carreras</a></li>
+                <li class="nav-menu-items"><a href="/PAGES/contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+            </ul>        
+        </nav>
+    </header>
+    <br>
+    <h1><strong>Completa los datos para poder comunicarte</strong></h1>
+    <form action="enviar.php" method="get" enctype="text/plain">
+        <div>
+            <label for="nombre"> Nombre y Apellido: </label>
+            <input type="text" id="nombre" placeholder="Ingrese sus datos">
+        </div>
+        <br>
+        <div>
+            <label for="email"> Email: </label>
+            <input type="email" id="email" required placeholder="Ingrese un mail">
+        </div>
+        <br>
+        <div>
+            <label for="pass"> Contraseña: </label>
+            <input type="password" id="pass" required placeholder="Ingrese su contraseña">
+        </div>
+        <br>
+        <div>
+            <label for="number"> Teléfono: </label>
+            <input type="number" id="number" required placeholder="Ingrese su teléfono">
+        </div>
+        <br>
+        <br>
+        <div>
+            <textarea name="Comentarios" id="Comentarios" cols="30" rows="5"
+                placeholder="Dejá tu consulta"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="acepto">Acepto terminos y condiciones</label>
+            <input type="checkbox" id="acepto">
+            <br>
+            <label for="news">Recibir notificaciones</label>
+            <input type="checkbox" id="news">
+        </div>
+        <br>
+        <div>
+            <p><strong>¿De qué país se comunica?</strong></p>
+            <select name="país" id="país">                
+                <option value="01">Argentina</option>
+                <option value="02">Chile</option>
+                <option value="03">Perú</option>
+                <option value="04">Uruguay</option>
+                <option value="05">Colombia</option>
+            </select>
+        </div>
+        <br>
+        <input type="submit" value="Consultar">
+        <input type="reset" value="Borrar">
+        <footer class="footer">
+            <div class="container">
+                <div>
+                    <p>SEGUINOS!</p>
+                    <button><img src="../IMG/Instagram.png" alt="Instagram" height="50" width="80"></button>
+                    <button> <img src="../IMG/whatsapp.png" alt="whatsapp" height="50" width="50"></button>
+                    <button><img src="../IMG/Facebook.png" alt="Facebook" height="50" width="50"></button>
+                    <p>&copy; Escuela Leo Paparella</p>
+                </div> 
+            </div>
+        </footer>
+    </form>  
+</body>
+</html>
